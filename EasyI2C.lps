@@ -7,7 +7,7 @@
       <Unit>
         <Filename Value="EasyI2C.lpr"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="10"/>
+        <EditorIndex Value="9"/>
         <CursorPos X="3" Y="14"/>
         <UsageCount Value="60"/>
         <Loaded Value="True"/>
@@ -22,7 +22,7 @@
         <IsVisibleTab Value="True"/>
         <TopLine Value="215"/>
         <CursorPos X="111" Y="230"/>
-        <FoldState Value=" T3jJ03444 pj9mR0Q1U"/>
+        <FoldState Value=" T3jJ03444@"/>
         <UsageCount Value="60"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -30,7 +30,7 @@
       <Unit>
         <Filename Value="i2cbasic.pas"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="5"/>
+        <EditorIndex Value="4"/>
         <TopLine Value="85"/>
         <CursorPos Y="101"/>
         <UsageCount Value="59"/>
@@ -43,7 +43,6 @@
         <EditorIndex Value="1"/>
         <TopLine Value="51"/>
         <CursorPos X="94" Y="31"/>
-        <FoldState Value=" T3iJ072$"/>
         <UsageCount Value="28"/>
         <Loaded Value="True"/>
       </Unit>
@@ -66,7 +65,7 @@
       </Unit>
       <Unit>
         <Filename Value="errorioctl.pas"/>
-        <EditorIndex Value="6"/>
+        <EditorIndex Value="5"/>
         <TopLine Value="159"/>
         <CursorPos Y="191"/>
         <UsageCount Value="26"/>
@@ -82,17 +81,16 @@
       <Unit>
         <Filename Value="sht35.pas"/>
         <UnitName Value="SHT35"/>
-        <EditorIndex Value="11"/>
+        <EditorIndex Value="10"/>
         <TopLine Value="58"/>
         <CursorPos X="59" Y="233"/>
-        <FoldState Value=" T3ib073H"/>
         <UsageCount Value="27"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="sensirioncrcgen.pas"/>
         <UnitName Value="SensirionCRCGen"/>
-        <EditorIndex Value="7"/>
+        <EditorIndex Value="6"/>
         <TopLine Value="17"/>
         <CursorPos X="86" Y="29"/>
         <UsageCount Value="27"/>
@@ -122,10 +120,9 @@
       <Unit>
         <Filename Value="dps310.pas"/>
         <UnitName Value="DPS310"/>
-        <EditorIndex Value="8"/>
+        <EditorIndex Value="7"/>
         <TopLine Value="34"/>
         <CursorPos Y="47"/>
-        <FoldState Value=" T3ie0f&apos;"/>
         <UsageCount Value="25"/>
         <Loaded Value="True"/>
       </Unit>
@@ -158,7 +155,7 @@
         <UsageCount Value="9"/>
       </Unit>
       <Unit>
-        <Filename Value="../../../Projekte/MCP2221B/i2cbasic.pas"/>
+        <Filename Value="../../Projekte/MCP2221B/i2cbasic.pas"/>
         <EditorIndex Value="-1"/>
         <WindowIndex Value="1"/>
         <TopLine Value="75"/>
@@ -166,13 +163,13 @@
         <UsageCount Value="10"/>
       </Unit>
       <Unit>
-        <Filename Value="../../../Projekte/MCP2221B/mcpform.pas"/>
+        <Filename Value="../../Projekte/MCP2221B/mcpform.pas"/>
         <UnitName Value="MCPForm"/>
         <EditorIndex Value="-1"/>
         <UsageCount Value="9"/>
       </Unit>
       <Unit>
-        <Filename Value="../../../Projekte/MCP2221B/sht35.pas"/>
+        <Filename Value="../../Projekte/MCP2221B/sht35.pas"/>
         <UnitName Value="SHT35"/>
         <EditorIndex Value="-1"/>
         <WindowIndex Value="1"/>
@@ -181,14 +178,14 @@
       </Unit>
       <Unit>
         <Filename Value="MCP2221_DLL.PAS"/>
-        <EditorIndex Value="9"/>
+        <EditorIndex Value="8"/>
         <TopLine Value="16"/>
         <CursorPos X="87" Y="31"/>
         <UsageCount Value="21"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
-        <Filename Value="../../../Projekte/MCP2221B/errorioctl.pas"/>
+        <Filename Value="../../Projekte/MCP2221B/errorioctl.pas"/>
         <EditorIndex Value="-1"/>
         <WindowIndex Value="1"/>
         <TopLine Value="153"/>
@@ -198,7 +195,7 @@
       <Unit>
         <Filename Value="sgp40.pas"/>
         <UnitName Value="SGP40"/>
-        <EditorIndex Value="4"/>
+        <EditorIndex Value="3"/>
         <CursorPos X="70" Y="15"/>
         <UsageCount Value="21"/>
         <Loaded Value="True"/>
@@ -246,11 +243,10 @@
       </Unit>
       <Unit>
         <Filename Value="../S7_Excel_and-SNAP_controlled/main.pas"/>
-        <EditorIndex Value="3"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="109"/>
         <CursorPos X="68" Y="904"/>
         <UsageCount Value="15"/>
-        <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="C:/lazarus/lcl/include/radiogroup.inc"/>
