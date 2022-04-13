@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="EasyI2C.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="10"/>
+        <CursorPos X="3" Y="14"/>
+        <UsageCount Value="60"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="mainunitraspiwin.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FEasyI2C"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="MainUnitRaspiWin"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="215"/>
+        <CursorPos X="111" Y="230"/>
+        <FoldState Value=" T3jJ03444 pj9mR0Q1U"/>
+        <UsageCount Value="60"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="i2cbasic.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="5"/>
+        <TopLine Value="85"/>
+        <CursorPos Y="101"/>
+        <UsageCount Value="59"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="conversions.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Conversions"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="51"/>
+        <CursorPos X="94" Y="31"/>
+        <FoldState Value=" T3iJ072$"/>
+        <UsageCount Value="28"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../SHT35_Pascal_2022-02-16/shc35.pas"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="1"/>
+        <TopLine Value="731"/>
+        <CursorPos X="3" Y="743"/>
+        <UsageCount Value="12"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/home/pi/FreePascal/Projekte/Wetterstation/i2cbasic.pas"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos Y="63"/>
+        <UsageCount Value="9"/>
+      </Unit>
+      <Unit>
+        <Filename Value="errorioctl.pas"/>
+        <EditorIndex Value="6"/>
+        <TopLine Value="159"/>
+        <CursorPos Y="191"/>
+        <UsageCount Value="26"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../SHT35_Pascal_2022-02-16/i2cbasic.pas"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="1"/>
+        <CursorPos X="47" Y="65"/>
+        <UsageCount Value="11"/>
+      </Unit>
+      <Unit>
+        <Filename Value="sht35.pas"/>
+        <UnitName Value="SHT35"/>
+        <EditorIndex Value="11"/>
+        <TopLine Value="58"/>
+        <CursorPos X="59" Y="233"/>
+        <FoldState Value=" T3ib073H"/>
+        <UsageCount Value="27"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="sensirioncrcgen.pas"/>
+        <UnitName Value="SensirionCRCGen"/>
+        <EditorIndex Value="7"/>
+        <TopLine Value="17"/>
+        <CursorPos X="86" Y="29"/>
+        <UsageCount Value="27"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../I2C_RasPi_and_WIN_Start/mainunit.pas"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="MainUnit"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="123"/>
+        <CursorPos X="15" Y="139"/>
+        <UsageCount Value="9"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../Wetterstation_KoTo/wettermain.pas"/>
+        <ComponentName Value="FWetterstation"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="WetterMain"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="1"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="dps310.pas"/>
+        <UnitName Value="DPS310"/>
+        <EditorIndex Value="8"/>
+        <TopLine Value="34"/>
+        <CursorPos Y="47"/>
+        <FoldState Value=" T3ie0f&apos;"/>
+        <UsageCount Value="25"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../Wetterstation_KoTo/dps310.pas"/>
+        <UnitName Value="DPS310"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="1"/>
+        <TopLine Value="40"/>
+        <CursorPos Y="131"/>
+        <FoldState Value=" T3iE0H1H"/>
+        <UsageCount Value="9"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../S7Schadgasanlage_ARMV7.V02/s7kotomain.pas"/>
+        <UnitName Value="S7KoToMain"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="1"/>
+        <TopLine Value="967"/>
+        <CursorPos Y="994"/>
+        <FoldState Value=" T3tS0A3 pj6jK0Q5]9NkF0P]9igjX0G1Y"/>
+        <UsageCount Value="11"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/home/pi/FreePascal/lazarus/components/TLazSerial-master/lazsynaser.pas"/>
+        <UnitName Value="LazSynaSer"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="73"/>
+        <CursorPos X="58" Y="100"/>
+        <UsageCount Value="9"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../../../Projekte/MCP2221B/i2cbasic.pas"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="1"/>
+        <TopLine Value="75"/>
+        <CursorPos Y="125"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../../../Projekte/MCP2221B/mcpform.pas"/>
+        <UnitName Value="MCPForm"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="9"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../../../Projekte/MCP2221B/sht35.pas"/>
+        <UnitName Value="SHT35"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="1"/>
+        <TopLine Value="193"/>
+        <UsageCount Value="9"/>
+      </Unit>
+      <Unit>
+        <Filename Value="MCP2221_DLL.PAS"/>
+        <EditorIndex Value="9"/>
+        <TopLine Value="16"/>
+        <CursorPos X="87" Y="31"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../../../Projekte/MCP2221B/errorioctl.pas"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="1"/>
+        <TopLine Value="153"/>
+        <CursorPos Y="187"/>
+        <UsageCount Value="9"/>
+      </Unit>
+      <Unit>
+        <Filename Value="sgp40.pas"/>
+        <UnitName Value="SGP40"/>
+        <EditorIndex Value="4"/>
+        <CursorPos X="70" Y="15"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="C:/lazarus/lcl/include/control.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="2941"/>
+        <CursorPos Y="2959"/>
+        <UsageCount Value="9"/>
+      </Unit>
+      <Unit>
+        <Filename Value="sht40.pas"/>
+        <UnitName Value="SHT40"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="182"/>
+        <CursorPos Y="214"/>
+        <UsageCount Value="19"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../Klimakammer_V06/i2cbasic.pas"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="9"/>
+      </Unit>
+      <Unit>
+        <Filename Value="C:/lazarus/lcl/interfaces/win32/win32memostrings.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="29"/>
+        <CursorPos Y="51"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="C:/Users/Admin/Downloads/Programmieren/snap7-full-1.4.2/rich-demos/mainclient.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="840"/>
+        <UsageCount Value="9"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../S7_Excel_and-SNAP_controlled/s7kotomain.pas"/>
+        <UnitName Value="S7KoToMain"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="552"/>
+        <UsageCount Value="9"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../S7_Excel_and-SNAP_controlled/main.pas"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="109"/>
+        <CursorPos X="68" Y="904"/>
+        <UsageCount Value="15"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="C:/lazarus/lcl/include/radiogroup.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="442"/>
+        <CursorPos Y="461"/>
+        <UsageCount Value="10"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="29">
+      <Position>
+        <Filename Value="sht40.pas"/>
+        <Caret Line="196" TopLine="168"/>
+      </Position>
+      <Position>
+        <Filename Value="sht40.pas"/>
+        <Caret Line="200" Column="31" TopLine="168"/>
+      </Position>
+      <Position>
+        <Filename Value="mainunitraspiwin.pas"/>
+        <Caret Line="348" TopLine="322"/>
+      </Position>
+      <Position>
+        <Filename Value="mainunitraspiwin.pas"/>
+        <Caret Line="350" TopLine="322"/>
+      </Position>
+      <Position>
+        <Filename Value="sht40.pas"/>
+        <Caret Line="187" TopLine="168"/>
+      </Position>
+      <Position>
+        <Filename Value="sht40.pas"/>
+        <Caret Line="188" TopLine="168"/>
+      </Position>
+      <Position>
+        <Filename Value="mainunitraspiwin.pas"/>
+        <Caret Line="399" TopLine="364"/>
+      </Position>
+      <Position>
+        <Filename Value="i2cbasic.pas"/>
+        <Caret Line="99" TopLine="85"/>
+      </Position>
+      <Position>
+        <Filename Value="i2cbasic.pas"/>
+        <Caret Line="101" TopLine="85"/>
+      </Position>
+      <Position>
+        <Filename Value="sht40.pas"/>
+        <Caret Line="189" TopLine="168"/>
+      </Position>
+      <Position>
+        <Filename Value="sht40.pas"/>
+        <Caret Line="190" TopLine="168"/>
+      </Position>
+      <Position>
+        <Filename Value="sht40.pas"/>
+        <Caret Line="191" TopLine="168"/>
+      </Position>
+      <Position>
+        <Filename Value="sht40.pas"/>
+        <Caret Line="192" TopLine="168"/>
+      </Position>
+      <Position>
+        <Filename Value="sht40.pas"/>
+        <Caret Line="193" TopLine="168"/>
+      </Position>
+      <Position>
+        <Filename Value="sht40.pas"/>
+        <Caret Line="194" TopLine="168"/>
+      </Position>
+      <Position>
+        <Filename Value="sht40.pas"/>
+        <Caret Line="195" TopLine="168"/>
+      </Position>
+      <Position>
+        <Filename Value="sht40.pas"/>
+        <Caret Line="196" TopLine="168"/>
+      </Position>
+      <Position>
+        <Filename Value="sht40.pas"/>
+        <Caret Line="201" TopLine="169"/>
+      </Position>
+      <Position>
+        <Filename Value="sht40.pas"/>
+        <Caret Line="202" TopLine="170"/>
+      </Position>
+      <Position>
+        <Filename Value="sht40.pas"/>
+        <Caret Line="203" TopLine="171"/>
+      </Position>
+      <Position>
+        <Filename Value="sht40.pas"/>
+        <Caret Line="204" TopLine="172"/>
+      </Position>
+      <Position>
+        <Filename Value="sht40.pas"/>
+        <Caret Line="205" TopLine="173"/>
+      </Position>
+      <Position>
+        <Filename Value="sht40.pas"/>
+        <Caret Line="206" TopLine="174"/>
+      </Position>
+      <Position>
+        <Filename Value="sht40.pas"/>
+        <Caret Line="207" TopLine="175"/>
+      </Position>
+      <Position>
+        <Filename Value="sht40.pas"/>
+        <Caret Line="208" TopLine="176"/>
+      </Position>
+      <Position>
+        <Filename Value="sht40.pas"/>
+        <Caret Line="209" TopLine="177"/>
+      </Position>
+      <Position>
+        <Filename Value="sht40.pas"/>
+        <Caret Line="210" TopLine="178"/>
+      </Position>
+      <Position>
+        <Filename Value="sht40.pas"/>
+        <Caret Line="211" TopLine="179"/>
+      </Position>
+      <Position>
+        <Filename Value="sht40.pas"/>
+        <Caret Line="212" TopLine="180"/>
+      </Position>
+      <Position>
+        <Filename Value="sht40.pas"/>
+        <Caret Line="213" TopLine="181"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+  <Debugging>
+    <Watches>
+      <Item>
+        <Expression Value="DPS310_i2c_address"/>
+        <DisplayStyle Value="wdfHex"/>
+      </Item>
+      <Item>
+        <Expression Value="result"/>
+      </Item>
+      <Item>
+        <Expression Value="rslt"/>
+      </Item>
+    </Watches>
+  </Debugging>
+</CONFIG>

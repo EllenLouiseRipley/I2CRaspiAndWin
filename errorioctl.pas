@@ -1,0 +1,193 @@
+unit errorioctl;
+
+{$mode objfpc}{$H+}
+
+interface
+
+uses
+  Classes, SysUtils;
+
+function ioctlerrortext(const error_no: word): string;
+
+implementation
+function ioctlerrortext(const error_no : word): string;
+var
+  I : word;
+begin
+I:=error_no;
+case I of
+{$IFDEF UNIX}
+    1 : result:=  'EPERM                Operation not permitted';
+    2 : result:=  'ENOENT               No such file or directory';
+    3 : result:=  'ESRCH                No such process';
+    4 : result:=  'EINTR                Interrupted system call';
+    5 : result:=  'EIO                  I/O error';
+    6 : result:=  'ENXIO                No such device or address';
+    7 : result:=  'E2BIG                Argument list too long';
+    8 : result:=  'ENOEXEC              Exec format error';
+    9 : result:=  'EBADF                Bad file number';
+   10 : result:=  'ECHILD               No child processes';
+   11 : result:=  'EAGAIN               Try again';
+   12 : result:=  'ENOMEM               Out of memory';
+   13 : result:=  'EACCES               Permission denied';
+   14 : result:=  'EFAULT               Bad address';
+   15 : result:=  'ENOTBLK              Block device required';
+   16 : result:=  'EBUSY                Device or resource busy';
+   17 : result:=  'EEXIST               File exists';
+   18 : result:=  'EXDEV                Cross-device link';
+   19 : result:=  'ENODEV               No such device';
+   20 : result:=  'ENOTDIR              Not a directory';
+   21 : result:=  'EISDIR               Is a directory';
+   22 : result:=  'EINVAL               Invalid argument';
+   23 : result:=  'ENFILE               File table overflow';
+   24 : result:=  'EMFILE               Too many open files';
+   25 : result:=  'ENOTTY               Not a typewriter';
+   26 : result:=  'ETXTBSY              Text file busy';
+   27 : result:=  'EFBIG                File too large';
+   28 : result:=  'ENOSPC               No space left on device';
+   29 : result:=  'ESPIPE               Illegal seek';
+   30 : result:=  'EROFS                Read-only file system';
+   31 : result:=  'EMLINK               Too many links';
+   32 : result:=  'EPIPE                Broken pipe';
+   33 : result:=  'EDOM                 Math argument out of domain of func';
+   34 : result:=  'ERANGE               Math result not representable';
+   35 : result:=  'EDEADLK              Resource deadlock would occur';
+   36 : result:=  'ENAMETOOLONG         File name too long';
+   37 : result:=  'ENOLCK               No record locks available';
+   38 : result:=  'ENOSYS               Function not implemented';
+   39 : result:=  'ENOTEMPTY            Directory not empty';
+   40 : result:=  'ELOOP                Too many symbolic links encountered';
+   41 : result:=  'EWOULDBLOCK EAGAIN   Operation would block';
+   42 : result:=  'ENOMSG               No message of desired type';
+   43 : result:=  'EIDRM                Identifier removed';
+   44 : result:=  'ECHRNG               Channel number out of range';
+   45 : result:=  'EL2NSYNC             Level 2 not synchronized';
+   46 : result:=  'EL3HLT               Level 3 halted';
+   47 : result:=  'EL3RST               Level 3 reset';
+   48 : result:=  'ELNRNG               Link number out of range';
+   49 : result:=  'EUNATCH              Protocol driver not attached';
+   50 : result:=  'ENOCSI               No CSI structure available';
+   51 : result:=  'EL2HLT               Level 2 halted';
+   52 : result:=  'EBADE                Invalid exchange';
+   53 : result:=  'EBADR                Invalid request descriptor';
+   54 : result:=  'EXFULL               Exchange full';
+   55 : result:=  'ENOANO               No anode';
+   56 : result:=  'EBADRQC              Invalid request code';
+   57 : result:=  'EBADSLT              Invalid slot';
+   59 : result:=  'EBFONT               Bad font file format';
+   60 : result:=  'ENOSTR               Device not a stream';
+   61 : result:=  'ENODATA              No data available';
+   62 : result:=  'ETIME                Timer expired';
+   63 : result:=  'ENOSR                Out of streams resources';
+   64 : result:=  'ENONET               Machine is not on the network';
+   65 : result:=  'ENOPKG               Package not installed';
+   66 : result:=  'EREMOTE              Object is remote';
+   67 : result:=  'ENOLINK              Link has been severed';
+   68 : result:=  'EADV                 Advertise error';
+   69 : result:=  'ESRMNT               Srmount error';
+   70 : result:=  'ECOMM                Communication error on send';
+   71 : result:=  'EPROTO               Protocol error';
+   72 : result:=  'EMULTIHOP            Multihop attempted';
+   73 : result:=  'EDOTDOT              RFS specific error';
+   74 : result:=  'EBADMSG              Not a data message';
+   75 : result:=  'EOVERFLOW            Value too large for defined data type';
+   76 : result:=  'ENOTUNIQ             Name not unique on network';
+   77 : result:=  'EBADFD               File descriptor in bad state';
+   78 : result:=  'EREMCHG              Remote address changed';
+   79 : result:=  'ELIBACC              Can not access a needed shared library ';
+   80 : result:=  'ELIBBAD              Accessing a corrupted shared library';
+   81 : result:=  'ELIBSCN              .lib section in a.out corrupted';
+   82 : result:=  'ELIBMAX              Attempting to link in too many shared libraries';
+   83 : result:=  'ELIBEXEC             Cannot exec a shared library directly';
+   84 : result:=  'EILSEQ               Illegal byte sequence';
+   85 : result:=  'ERESTART             Interrupted system call should be restarted';
+   86 : result:=  'ESTRPIPE             Streams pipe error';
+   87 : result:=  'EUSERS               Too many users';
+   88 : result:=  'ENOTSOCK             Socket operation on non-socket';
+   89 : result:=  'EDESTADDRREQ         Destination address required';
+   90 : result:=  'EMSGSIZE             Message too long';
+   91 : result:=  'EPROTOTYPE           Protocol wrong type for socket';
+   92 : result:=  'ENOPROTOOPT          Protocol not available';
+   93 : result:=  'EPROTONOSUPPORT      Protocol not supported';
+   94 : result:=  'ESOCKTNOSUPPORT      Socket type not supported';
+   95 : result:=  'EOPNOTSUPP           Operation not supported on transport endpoint';
+   96 : result:=  'EPFNOSUPPORT         Protocol family not supported';
+   97 : result:=  'EAFNOSUPPORT         Address family not supported by protocol';
+   98 : result:=  'EADDRINUSE           Address already in use';
+   99 : result:=  'EADDRNOTAVAIL        Cannot assign requested address';
+  100 : result:=  'ENETDOWN             Network is down';
+  101 : result:=  'ENETUNREACH          Network is unreachable';
+  102 : result:=  'ENETRESET            Network dropped connection because of reset';
+  103 : result:=  'ECONNABORTED         Software caused connection abort';
+  104 : result:=  'ECONNRESET           Connection reset by peer';
+  105 : result:=  'ENOBUFS              No buffer space available';
+  106 : result:=  'EISCONN              Transport endpoint is already connected';
+  107 : result:=  'ENOTCONN             Transport endpoint is not connected';
+  108 : result:=  'ESHUTDOWN            Cannot send after transport endpoint shutdown';
+  109 : result:=  'ETOOMANYREFS         Too many references: cannot splice';
+  110 : result:=  'ETIMEDOUT            Connection timed out';
+  111 : result:=  'ECONNREFUSED         Connection refused';
+  112 : result:=  'EHOSTDOWN            Host is down';
+  113 : result:=  'EHOSTUNREACH         No route to host';
+  114 : result:=  'EALREADY             Operation already in progress';
+  115 : result:=  'EINPROGRESS          Operation now in progress';
+  116 : result:=  'ESTALE               Stale NFS file handle';
+  117 : result:=  'EUCLEAN              Structure needs cleaning';
+  118 : result:=  'ENOTNAM              Not a XENIX named type file';
+  119 : result:=  'ENAVAIL              No XENIX semaphores available';
+  120 : result:=  'EISNAM               Is a named type file';
+  121 : result:=  'EREMOTEIO            Remote I/O error';
+  122 : result:=  'EDQUOT               Quota exceeded';
+  123 : result:=  'ENOMEDIUM            No medium found';
+  124 : result:=  'EMEDIUMTYPE          Wrong medium type';
+  125 : result:=  'ECANCELED            Operation Canceled';
+  126 : result:=  'ENOKEY               Required key not available';
+  127 : result:=  'EKEYEXPIRED          Key has expired';
+  128 : result:=  'EKEYREVOKED          Key has been revoked';
+  129 : result:=  'EKEYREJECTED         Key was rejected by service';
+  130 : result:=  'EOWNERDEAD           Owner died';
+  131 : result:=  'ENOTRECOVERABLE      State not recoverable';
+{$ENDIF}
+{$IFDEF WINDOWS}
+  0 :	result := 'Operation was successful';
+  1 :	result := 'Unknown error';
+  2 :	result := 'The library indicates an unexpected device reply after being given a command';
+  3 :	result := 'Invalid device handle usage attempt';
+  4 :	result := 'At least one api parameter is not valid';
+  5 :	result := 'Invalid password string (length < 8)';
+  6 :	result := 'An incorrect password was sent 3 times';
+  7 :	result := 'The command cannot be executed because the device is password protected or locked';
+  10 :	result := 'Null pointer received';
+  11 :	result := 'Destination string too small';
+  12 :	result := 'The input string exceeds the maximum allowed size';
+  13 :	result := 'Flash write failed due to an unknown cause';
+  14 :	result := 'Memory allocation error';
+  101 :	result := 'An attempt was made to open a connection to a non existing index';
+  103 :	result := 'No device with the provided vid/pid or SN has been found';
+  104 :	result := 'One of the internal buffers of the function was too small';
+  105 :	result := 'An error occurred when trying to get the device handle';
+  106 :	result := 'Connection already opened';
+  107 :	result := 'File close operation failed due to unknown reasons';
+  301 :	result := 'Low level communication error, should not appear during normal operation';
+  302 :	result := 'Low level communication error, should not appear during normal operation';
+  303 :	result := 'Low level communication error should not appear during normal';
+  401 :	result := 'I2c/smbus speed is not within accepted range of 46875 - 500000';
+  402 :	result := 'The speed may fail to be set if an i2c/smbus operation is already in progress or in a timeout situation';
+  403 :	result := 'The byte count is outside the accepted range for the attempted operation';
+  404 :	result := 'Invalid slave address. If 7 bit addressing is used the maximum address value is 127';
+  405 :	result := 'The mcp2221 i2c/smbus engine is currently busy';
+  406 :	result := 'Mcp2221 signaled an error during the i2c read operation';
+  407 :	result := 'Nack received for the slave address used';
+  408 :	result := 'Either the "timeout" or "retries" value has been exceeded and no reply was received from the slave';
+  409 :	result := 'The number of received data bytes is greater than requested';
+  410 :	result := 'Could not copy the data received from the slave into the provided buffer';
+  411 :	result := 'The i2c engine (inside mcp2221) was already idle. The cancellation command had no effect';
+  412 :	result := 'Failed to copy the data into the hid buffer';
+  413 :	result := 'The slave replied with a pec value different than the expected one';
+  414 :	result := 'The slave sent a different value for the block size(byte count) than we expected';
+{$ENDIF}
+  else result:='unknown';
+end;
+end;
+end.
+
